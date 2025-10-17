@@ -11,10 +11,11 @@
 // Усі слова slug повинні бути розділені тире.
 
 {
-function slugify(title) {
-
-
-}
+  function slugify(title) {
+    let slug = title.toLowerCase().trim().split(' ').join('-'); // оголосив змінну та надав їм задач
+    // Метод .trim() видаляє пробіли з початку та кінця рядка.
+    return slug; //повернув результат
+  }
 
   console.log(slugify('Arrays for beginners')); // "arrays-for-beginners"
   console.log(slugify('English for developer')); // "english-for-developer"
