@@ -12,7 +12,7 @@
     for (let i = 0; i < numbers.length; i += 1) {
       if (numbers[i] > value) {
         //numbers[i] — це елемент масиву (тобто одне число, а не масив)!!! важдливо
-        newArray.push(numbers[i]);
+        newArray.push(numbers[i]); // просто додаваємо елемент, який пройшов фільтр
       }
     }
     return newArray;
